@@ -1,0 +1,2 @@
+npm install "..\KassUiNav\dist\kass-ui-nav-lib"
+npm uninstall "..\KassUiNav\dist\kass-ui-nav-lib"

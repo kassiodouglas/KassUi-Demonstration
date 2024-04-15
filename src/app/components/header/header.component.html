@@ -1,0 +1,49 @@
+<div class="container">
+
+  <div class="row mt-3 justify-content-center">
+    <div class="h3 col-8 d-flex justify-content-center rounded" [style.background-color]="'green'">
+      Unidade I
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col d-flex justify-content-center">
+
+      <div class="me-2 d-flex justify-content-center align-items-center">
+        <i class="fa-regular fa-user fs-2"></i>
+      </div>
+
+      <div class="d-flex flex-column">
+        <div class="name text-truncate">
+         Kassio Douglas
+        </div>
+        <div class="small text-truncate opacity-50">Desenvolvedor</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<div class="row">
+  <div class="col justify-content-center d-flex">
+
+    <button class="btn btn-sm btn-outline-light border-0" routerLink="/auth/logout"><i
+        class="fa-solid fa-right-from-bracket"></i> Sair</button>
+
+    <button class="btn btn-sm btn-outline-light border-0" routerLink="/auth/configuracoes"><i
+        class="fa-solid fa-address-book"></i> Configurações</button>
+
+    <button [ngClass]="{'btn-primary text-white':qntNotifications>0}" type="button"
+      class="btn  btn-outline-light  btn-sm mx-1  border-0 position-relative">
+      <i class="fa-solid fa-bell"></i>
+      <span *ngIf="qntNotifications>0"
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        {{qntNotifications}}
+        <span class="visually-hidden">Notificações não lidas</span>
+      </span>
+    </button>
+  </div>
+</div>

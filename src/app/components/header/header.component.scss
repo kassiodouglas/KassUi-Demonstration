@@ -1,0 +1,36 @@
+$font_color: #fff;
+
+.logo-area{
+    img{
+        max-width: 80%;
+    }
+}
+
+.user_photo{
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    margin: 0 10px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    i{
+        font-size: 1.5rem;
+        color: $font_color;
+    }
+}
+
+
+.name{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: $font_color;
+}
+
+.job{
+    font-size: .8rem;
+    opacity: .5;
+    text-align: left;
+}
