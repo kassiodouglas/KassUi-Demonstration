@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   routes = [
     {
       path: '/',
-      label: 'Pátio',
+      label: 'Dashboard',
       icon: '<i class="fa-solid fa-warehouse"></i>',
     },
 
@@ -26,12 +26,8 @@ export class AppComponent implements OnInit {
       permissions:['DEVELOP'],
       links: [
         { path: '/administracao/usuarios', label: 'Usuários', parent:"Adminstração"},
-        { path: '/administracao/enderecos', label: 'Endereços', parent:"Adminstração"},
-        { path: '/administracao/veiculos', label: 'Veículos', parent:"Adminstração"},
-        { path: '/administracao/vagas', label: 'Vagas', parent:"Adminstração"},
-        { path: '/administracao/clientes', label: 'Clientes', parent:"Adminstração"},
-        { path: '/administracao/contratos', label: 'Contratos', parent:"Adminstração"},
-        { path: '/administracao/unidades', label: 'Unidades', parent:"Adminstração"},
+        { path: '/administracao/permissoes', label: 'Permissões', parent:"Adminstração"},
+        { path: '/administracao/clientes', label: 'Permissões', parent:"Clientes"},
       ],
     },
 
@@ -65,12 +61,6 @@ export class AppComponent implements OnInit {
       ]
     },
 
-    {
-      id: 'checklist', label: 'Checklist', icon: '<i class="fa-regular fa-newspaper"></i>',
-      links:[
-        {path:'/relatorios/checklist/consultas',label: 'Consulta', parent:"Checklist"},
-      ]
-    },
   ];
 
   position = 'center';
